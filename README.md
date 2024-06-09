@@ -1,1 +1,1 @@
-## React textarea height control
+# React textarea height control
