@@ -2,7 +2,7 @@
 
 #### `Demo:` https://dmitriyshkredov.github.io/react-textarea-height-control/
 
-#### `Телеграм:` [@tipichnyj_web_razrabotchik](https://t.me/tipichnyj_web_razrabotchik)
+#### `Телеграм:` [@tipichnyj_web_razrabotchik](https://t.me/tipichnyj_web_razrabotchik/89)
 
 #### `Видео:` [YouTube](https://youtu.be/v-k49sNWXnk)
 
