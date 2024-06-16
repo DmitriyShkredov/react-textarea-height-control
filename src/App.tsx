@@ -1,20 +1,20 @@
-import { useEffect, useRef, useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import type { ChangeEvent } from "react";
 import "./App.css";
 
 export default function App() {
   const [value, setValue] = useState("");
-  const textAreaRef = useRef<HTMLTextAreaElement>(null);
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
 
   const handleChange = (event: ChangeEvent<HTMLTextAreaElement>) => {
-    setValue(event.target?.value || "");
+    setValue(event.target?.value);
   };
 
   useEffect(() => {
-    if (textAreaRef.current) {
-      textAreaRef.current.style.height = "0px";
-      const height = textAreaRef.current?.scrollHeight;
-      textAreaRef.current.style.height = height + "px";
+    if (textareaRef.current) {
+      textareaRef.current.style.height = "0px";
+      const height = textareaRef.current?.scrollHeight;
+      textareaRef.current.style.height = height + "px";
     }
   }, [value]);
 
@@ -23,10 +23,10 @@ export default function App() {
       <textarea
         className="textarea"
         placeholder="Введите текст"
-        ref={textAreaRef}
+        ref={textareaRef}
         value={value}
         onChange={handleChange}
-      />
+      ></textarea>
     </form>
   );
 }
